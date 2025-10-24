@@ -1,0 +1,143 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda de mascotas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tienda de mascotas</a>
+    <div class="navbar-nav">
+      <a class="nav-link active" href="">Animales</a>
+      <a class="nav-link" href="">Adopcion</a>
+      <a class="nav-link" href="">Candidatos</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container" container max-width="720px">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <input type="text" placeholder="Buscar Mascota">    
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAgregarMascota">
+            <i class="bi bi-person-plus-fill"></i> Agregar Mascota
+        </button>
+  </div>
+
+
+
+
+
+<header class="jumbotron text-center">
+  <h1>Gestión de Mascotas en Adopción</h1>
+</header>
+
+
+<div class="container-fluid">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope = "col">No.</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Animal</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Raza</th>
+        <th scope="col">Estado de la Mascota</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td>1</td>
+        <td>Max</td>
+        <td>Perro</td>
+        <td>2 años</td>
+        <td>Pastor</td>
+        <td>Publico</td>
+      </tr>
+
+        <tr>
+        <td>2</td>
+        <td>Malvabisco</td>
+        <td>Gato</td>
+        <td>1 año</td>
+        <td>Persa</td>
+        <td>Borrador</td>
+      </tr>
+
+        <tr>
+        <td>3</td>
+        <td>T-eo</td>
+        <td>Dinosaurio</td>
+        <td>66 millones de años</td>
+        <td>T-Rex</td>
+        <td>Adoptado</td>
+      </tr>
+
+        <tr>
+        <td>4</td>
+        <td>Solovino</td>
+        <td>Perro</td>
+        <td>4 años</td>
+        <td>chihuahua</td>
+        <td>Deshabilitado</td>
+      </tr>
+
+        <tr>
+        <td>5</td>
+        <td>Pepa</td>
+        <td>Puerco</td>
+        <td>5 años</td>
+        <td>Puerco</td>
+        <td>Borrador</td>
+      </tr>
+
+        <tr>
+        <td>6</td>
+        <td>Luisillo</td>
+        <td>Pez</td>
+        <td>4 meses</td>
+        <td>Betta</td>
+        <td>adoptado</td>
+      </tr>
+
+    </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="modalAgregarMascota" tabindex="-1">
+  <div class="modal-dialog">
+    <form class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar Mascota</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <input id="inputNombre" type="text" class="form-control mb-2" placeholder="Nombre" required>
+        <input id="inputAnimal" type="text" class="form-control mb-2" placeholder="Animal" required>
+        <input id ="inputEdad" type="text" class="form-control mb-2" placeholder="Edad" required>
+        <input id="inputRaza" type="text" class="form-control mb-2" placeholder="Raza" required>
+        <input id="inputEstado" type="text" class="form-control mb-2" placeholder="Estado" required>
+      </div>
+      <div class="modal-footer">
+        <button id="Guardar" type="submit" class="btn btn-success">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
